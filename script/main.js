@@ -23,10 +23,10 @@ modal_button.addEventListener("click", function(){
 });
 register_button.addEventListener("click", function(){
     if (register_form.style.display == "block") {
-        register_form.style.display = "none";
-        login_form.style.display = "block"
-        login_button.style.textDecoration = 'underline';
-        register_button.style.textDecoration = 'none';
+        register_form.style.display = "block";
+        login_form.style.display = "none";
+        register_button.style.textDecoration = 'underline';
+        login_button.style.textDecoration = 'none';
     } else {
         register_form.style.display = "block";
         login_form.style.display = "none";
@@ -37,10 +37,10 @@ register_button.addEventListener("click", function(){
 
 login_button.addEventListener("click", function(){
     if (login_form.style.display == "block") {
-        register_form.style.display = "block";
-        login_form.style.display = "none";
-        register_button.style.textDecoration = 'underline';
-        login_button.style.textDecoration = 'none';
+        register_form.style.display = "none";
+        login_form.style.display = "block"
+        login_button.style.textDecoration = 'underline';
+        register_button.style.textDecoration = 'none';
     } else {
         register_form.style.display = "none";
         login_form.style.display = "block"
@@ -53,10 +53,10 @@ login_show_pass.addEventListener("click", function(evt){
     evt.preventDefault()
     if (login_password.type == "password") {
         login_password.type = "text"
-        login_show_pass.style.backgroundImage = 'url(../show_pass.png)'
+//        login_show_pass.style.backgroundImage = 'url(../show_pass.png)'
     } else {
         login_password.type = "password"
-        login_show_pass.style.backgroundImage = 'url(../hide_pass.png)'
+//        login_show_pass.style.backgroundImage = 'url(../hide_pass.png)'
     }
 });
 
@@ -64,9 +64,9 @@ register_show_pass.addEventListener("click", function(evt){
     evt.preventDefault()
     if (register_password.type == "password") {
         register_password.type = "text"
-        register_show_pass.style.backgroundImage = 'url(../../show_pass.png)'
+//        register_show_pass.style.backgroundImage = 'url(../show_pass.png)'
     } else {
         register_password.type = "password"
-        register_show_pass.style.backgroundImage = 'url(../../hide_pass.png)'
+//        register_show_pass.style.backgroundImage = 'url(../hide_pass.png)'
     }
 });

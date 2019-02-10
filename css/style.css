@@ -1,17 +1,26 @@
-body{
-    background-color: black;
+.register_form {
+    display: none;
 }
-
+    
+.login_form {
+    display: none;
+}
+    
+.modal_form {
+    display: none;
+    background-color: rgb(60, 138, 221);
+}
 .modal_popup>button {
     display: block;
     margin: 0 auto;
-    border: 1px solid white;
-    color: white;
+    border: 5px solid rgb(0, 174, 255);
+    color: black;
     padding: 1.5% 6%;
+    background-color: rgba(53, 96, 235, 0.92)
 }
 
 .modal_popup button:active{
-    background-color: rgba(255,255,255,.3);
+    background-color: rgb(60, 76, 163);
 }
 
 .modal_form ul {
@@ -20,7 +29,7 @@ body{
 
 .modal_form li {
     display: inline-block;
-    color: white;
+    color: black;
     text-decoration: underline;
 }
 
@@ -29,7 +38,7 @@ body{
     text-align: center;
     width: 25%;
     border-radius: 25px;
-    border: 5px solid white;
+    border: 5px solid rgb(13, 0, 160);
 }
 
 .modal_form input {
@@ -37,7 +46,7 @@ body{
     display: block;
     width: 75%;
     outline: none;
-    border-radius: 50px;
+    border-radius: 7px;
 }
 
 .modal_form .login_form .password input,
@@ -57,7 +66,7 @@ body{
     left: -35px;
     top: 3px;
     width: 20px;
-    height: 20px;
+    height: 15px;
     background-color: #fff;
     outline: none;
     border: none;
@@ -67,7 +76,7 @@ body{
 
 .modal_form label {
     font-size: 20px;
-    color: #fff;
+    color: black;
 }
 
 .modal_form button {
@@ -79,7 +88,7 @@ body{
     background-color: rgba(255,255,255,0);
     border: 2px solid #fff;
     outline: none;
-    color: #fff;
+    color: black;
     font-size: 18px;
     font-weight: 700;
 }
